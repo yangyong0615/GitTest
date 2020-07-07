@@ -1,0 +1,5 @@
+D:\Program Files\Kingdee\K3Cloud\WebSite\Bin\Para.App.Report.dll
+D:\Program Files\Kingdee\K3Cloud\WebSite\Bin\Para.App.Report.pdb
+D:\Code\PARAMONT\Para.App.Report\obj\Debug\Para.App.Report.csprojResolveAssemblyReference.cache
+D:\Code\PARAMONT\Para.App.Report\obj\Debug\Para.App.Report.dll
+D:\Code\PARAMONT\Para.App.Report\obj\Debug\Para.App.Report.pdb

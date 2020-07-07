@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A42013C2-5D57-490E-B7C2-5A6011BB5F64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Para.App.Report</RootNamespace>
+    <AssemblyName>Para.App.Report</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS, Version=7.1.606.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App, Version=7.1.606.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Contracts, Version=7.1.606.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Core, Version=7.1.606.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.DataEntity, Version=7.2.940.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceHelper, Version=7.2.940.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.FIN.AP.App.Report, Version=7.3.1310.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.FIN.AP.App.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.FIN.HS.App.Report, Version=7.3.1310.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.FIN.HS.App.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.SCM.App.Stock.Report, Version=7.1.606.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Kingdee\K3Cloud\WebSite\Bin\Kingdee.K3.SCM.App.Stock.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AP_MaturedDebt\Filter.cs" />
+    <Compile Include="AP_MaturedDebt\ServicesPlugIn.cs" />
+    <Compile Include="CategoryPurRankRpt\Filter.cs" />
+    <Compile Include="CategoryPurRankRpt\ServicesPlugIn.cs" />
+    <Compile Include="CustContactAnalyzeReport\Filter.cs" />
+    <Compile Include="CustContactAnalyzeReport\ServicesPlugIn.cs" />
+    <Compile Include="CustMonSODelRecReport\Filter.cs" />
+    <Compile Include="CustMonSODelRecReport\ServicesPlugIn.cs" />
+    <Compile Include="CustomerDeductionReport\Filter.cs" />
+    <Compile Include="CustomerDeductionReport\ServicesPlugIn.cs" />
+    <Compile Include="CustomerRankReport\ServicesPlugIn.cs" />
+    <Compile Include="DepPurCutPaymentDetailRpt\Filter.cs" />
+    <Compile Include="DepPurCutPaymentDetailRpt\ServicesPlugIn.cs" />
+    <Compile Include="DeptFeeStatisticsRpt\Filter.cs" />
+    <Compile Include="DeptFeeStatisticsRpt\ServicesPlugIn.cs" />
+    <Compile Include="DevliCostAnalysisReport\Filter.cs" />
+    <Compile Include="DevliCostAnalysisReport\ServicesPlugIn.cs" />
+    <Compile Include="ExportProductRankReport\ServicesPlugIn.cs" />
+    <Compile Include="HS_INOUTSTOCKDETAILRPT\InOutStockDetailService.cs" />
+    <Compile Include="HS_INOUTSTOCKSUMMARYRPT\InOutStockSummaryService.cs" />
+    <Compile Include="PMEGCost\Filter.cs" />
+    <Compile Include="PMEGCost\ServicesPlugIn.cs" />
+    <Compile Include="POExecuteRpt\Filter.cs" />
+    <Compile Include="POExecuteRpt\POExecuteRptEdit.cs" />
+    <Compile Include="POExecuteRpt\ServicesPlugIn.cs" />
+    <Compile Include="ProfitTrackRpt\Filter.cs" />
+    <Compile Include="ProfitTrackRpt\ServicesPlugIn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurPayDetailRpt\Filter.cs" />
+    <Compile Include="PurPayDetailRpt\ServicesPlugIn.cs" />
+    <Compile Include="STK_StockDetailRpt\StockDetailRpt.cs" />
+    <Compile Include="STK_StockSummaryRpt\StockSummaryRpt.cs" />
+    <Compile Include="SupBusDepStatisReport\Filter.cs" />
+    <Compile Include="SupBusDepStatisReport\ServicesPlugIn.cs" />
+    <Compile Include="SupplierRankingReport\Filter.cs" />
+    <Compile Include="SupplierRankingReport\ServicesPlugIn.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
