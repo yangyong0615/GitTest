@@ -14,7 +14,7 @@ using System.Text;
 
 namespace Para.App.Report.PMEGCost
 {
-    [HotUpdate]
+    [HotUpdate]1
     [Description("高山阳普生成本表—过滤插件")]
     public class Filter : AbstractCommonFilterPlugIn
     {
